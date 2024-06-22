@@ -1,0 +1,87 @@
+/* Center the calculator on the page */
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the calculator card */
+  .card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 320px;
+  }
+  
+  /* Style the display area */
+  .out-Screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+  }
+  
+  /* Style the input field */
+  .out-Screen input {
+    width: 100%;
+    font-size: 2em;
+    border: none;
+    background: none;
+    text-align: right;
+    outline: none;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the result display */
+  .result {
+    font-size: 1.5em;
+    color: #888;
+  }
+  
+  /* Style the buttons container */
+  .input-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  /* Style the buttons */
+  .actions {
+    padding: 20px;
+    font-size: 1.2em;
+    background: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  /* Button hover effect */
+  .actions:hover {
+    background: #d5d5d5;
+  }
+  
+  /* Special style for equal button */
+  .actions:nth-child(15) {
+    grid-column: span 2;
+  }
+  
+  /* Special style for clear button */
+  .actions:last-child {
+    background: #ff4d4d;
+    color: white;
+  }
+  
+  .actions:last-child:hover {
+    background: #ff1a1a;
+  }
+  
